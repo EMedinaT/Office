@@ -4,13 +4,16 @@ import Options from "./components/layout/auth/Options"
 import Recuperation from "./components/layout/auth/Recuperation"
 
 function App() {
-  let usuario = 'Correo electrónico, telefóno o Skype'  
+  let usuario = 'Correo electrónico, telefóno o Skype'
   return (
     <>
-      <Login usuario={usuario} />
-      <Recuperation />
-      <Butons />
+      <div className="ContenedorPrincipal">
+        <Login usuario={usuario} />
+        <Recuperation />
+        <Butons />
+      </div>
       <Options />
+
     </>
   )
 }
